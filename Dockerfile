@@ -3,7 +3,7 @@ MAINTAINER Everton Muniz <munizeverton@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN git help
+RUN apt-cache search wget
 RUN apt-get -y install wget && apt-get -y install php5
 
 # install composer
